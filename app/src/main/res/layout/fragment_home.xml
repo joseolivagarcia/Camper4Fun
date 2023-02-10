@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment"
+    android:layout_marginBottom="50dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@color/green">
+
+      <com.mancj.materialsearchbar.MaterialSearchBar
+          style="@style/MaterialSearchBarLight"
+          app:mt_hint="Búsqueda"
+          app:mt_placeholder="Buscar"
+          app:mt_maxSuggestionsCount="10"
+          app:mt_searchBarColor="@color/green"
+          app:mt_placeholderColor="@color/white"
+          app:mt_searchIconTint="@color/white"
+          app:mt_menuIconTint="@color/white"
+          app:mt_clearIconTint="@color/white"
+          app:mt_hintColor="@color/greyLight"
+          app:mt_backIconTint="@color/white"
+          app:mt_leftTextSelectorTint="@color/greyLight"
+          app:mt_textColor="@color/white"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/searchBar" />
+
+   </LinearLayout>
+
+   <!--metemos un linearlayout que sera el contenedor de los cardviews-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginTop="55dp">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+   </LinearLayout>
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/floatingbutton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_add"
+       android:layout_gravity="bottom|right"
+       android:layout_marginBottom="45dp"
+       android:layout_marginRight="15dp"/>
+
+
+</FrameLayout>

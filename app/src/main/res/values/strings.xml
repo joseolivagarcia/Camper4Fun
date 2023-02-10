@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Camper4Fun</string>
+    <string name="mail">correo electrónico</string>
+    <string name="password">contraseña</string>
+    <string name="confirmpassword">confirmar contraseña</string>
+    <string name="username">nombre de usuario</string>
+    <string name="btnlogin">INICIAR SESIÓN</string>
+    <string name="btnregis">REGISTRARSE</string>
+    <string name="sincuenta">¿No tienes cuenta?</string>
+    <string name="registroaqui">REGISTRATE AQUÍ</string>
+    <string name="labelRegistrate">REGISTRATE AHORA</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="transitionname_picture">transitionnamepicture</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>
